@@ -1,0 +1,22 @@
+package breakoutplay;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class BreakoutPlay extends JPanel {
+
+    
+    public static void main(String[] args) {
+        
+         JFrame game = new JFrame();
+       Play_a Play = new Play_a();
+        game.setTitle("Breakout game");
+        game.setBounds(20, 20, 700, 700);                           
+        game.setVisible(true);                                 
+        game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
+        game.setResizable(false); 
+        game.add(Play);
+    }
+    
+}
+
